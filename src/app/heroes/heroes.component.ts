@@ -9,4 +9,9 @@ import {HEROES} from '../mock-heroes';
 })
 export class HeroesComponent {
   public heroes: Array<Hero> = HEROES;
+  public selectedHero: Hero;
+
+  public onClick(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
